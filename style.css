@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*   fontFamily start  */
+
+@font-face{
+    font-family: font1;
+    src: url(Morica\ PERSONAL\ USE\ ONLY!.ttf);
+}
+
+/*   fontFamily end  */
+
+body{
+    background-color: white;
+}
+
+
+@media screen and (max-width: 420px) {
+    .banner{
+        display: flex;
+        height: 250px;
+        align-items: center;
+        justify-content: center;
+        background-color: #011c27;
+    }
+    .banner img{
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+    }
+    header img{
+        width: 80px;
+        height: 100px;
+        object-fit:cover;
+        border-radius: 20px;
+    }
+    .ko{
+        height: 103px;
+    }
+    header{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 5rem;
+        margin-top: -3rem;
+    }
+    header .img{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    header .img .first,.second{
+        display: flex;
+        gap: 30px;
+    }
+    header .second{
+        transform: translate(0,10px);
+    }
+    header h2{
+        font-size: 30px;
+        font-family: font1;
+        color: #0172ac;
+        letter-spacing: 2px;
+    }
+    header p{
+        text-align: center;
+        line-height: 23px;
+        color: rgba(48, 47, 47, 0.959);
+        font-weight: bold;
+        font-size: 17px;
+        font-family: sans-serif;
+    }
+    header .sm{
+        display: flex;
+        gap: 40px;
+    }
+    header .sm a{
+        width: 45px;
+        border: 1px solid #0172ac;
+        height: 45px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        border-radius: 50%;
+        transition: 0.5s;
+    }
+    header .sm a:hover{
+        transition: 0.5s;
+        background-color: #043f58;
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 0 0 50px 30px;
+    }
+    .contact .box .cont .p{
+        font-size: 20px;
+        color: #011c27;
+    }
+    .contact .box{
+        display: flex;
+        align-items: start;
+        gap: 10px;
+        height: 100px;
+    }
+    .contact .box .icon{
+        display: flex;
+        width: 60px;
+        height: 60px;
+        background-color: #0172ac;
+        align-items: center;
+        justify-content: center;
+        border-radius: 7px;
+    }
+    .contact .box .cont{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: start;
+    }
+    .contact .box .cont p{
+        text-align: center;
+        line-height: 23px;
+        color: rgba(48, 47, 47, 0.959);
+        font-weight: bold;
+        font-size: 19px;
+        font-family: sans-serif;
+        line-break: anywhere;
+    }
+    .contact h1{
+        font-size: 30px;
+        font-family: font1;
+        color: #0172ac;
+        letter-spacing: 2px;   
+    }
+    .bar{
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        width: 100%;
+        height: 70px;
+        align-items: center;
+        background-color: #014669;
+        transform: translate(0,80px);
+        z-index: 999;
+    }
+    .service{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+        transform: translate(0,-40px);
+    }
+    .service .parent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 300px;
+        height: 120px;
+        background-color: #014669;
+        color: white;
+        border-radius: 7px;
+    }
+    .service .parent h2{
+        font-size: 20px;
+        font-family: sans-serif;
+        color: white;
+        letter-spacing: 3px; 
+    }
+    .h1{
+        font-size: 30px;
+        font-family: font1;
+        color: #0172ac;
+        letter-spacing: 3px; 
+        transform: translate(0px,-60px);
+        padding: 0 0 0 30px;
+    }
+    /* projects page start */
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+    padding: 0 30px 0 20px;
+    margin: 20px 0 0 0;
+}
+nav a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(223, 221, 221);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+nav i{
+    font-size: 1.3rem;
+    color: #0172ac;
+}
+nav img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 0 70px 0px;
+    transform: translate(0,30px);
+}
+main .projects{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+main .projects img{
+    width: 350px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 0 30px 0 20px;
+    object-fit: fill;
+}
+main .projects a{
+    text-decoration: none;
+    color: #014669;
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    width: 200px;
+    padding:  0 0 0 20px;
+}
+main h1{
+    font-size: 28px;
+    font-family: font1;
+    color: #0172ac;
+    letter-spacing: 3px;
+    padding:  0 0 0 20px;
+}
+}
